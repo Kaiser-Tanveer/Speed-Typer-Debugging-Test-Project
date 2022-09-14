@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Post</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="blog-head">
+      <h1>My Blog</h1>
+    </nav>
+
+    <main>
+      <div class="blog-main">
+        <article>
+          <h2>1. Difference Between Local Storage and Session Storage:</h2>
+          <div class="full">
+            <div class="half-width">
+              <ul>
+                <li>
+                  <strong>localStorage</strong>
+                  persists the storage across browser sessions. So even if the
+                  domain is opened in a new tab, or the browser is closed and
+                  reopened, the storage is saved. There is no expiration.
+                </li>
+                <hr />
+              </ul>
+            </div>
+            <div class="half-width">
+              <ul>
+                <li>
+                  <strong>sessionStorage</strong>
+                  is cleared when the page session ends. A page session lasts as
+                  long as the tab or the browser is open. Therefore, when you
+                  open a new tab or a new window, this creates a new session and
+                  new storage.
+                </li>
+                <hr />
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h2>2. Difference Between Global Scope and Block Scope:</h2>
+          <div class="full">
+            <div class="half-width">
+              <ul>
+                <li>
+                  A variable exists inside or outside a block. If a variable is
+                  declared outside all functions or curly braces ({}), it exists
+                  in the <strong>global scope</strong>. The global variables can
+                  be accessed by any line of code in the program, including
+                  inside blocks.
+                </li>
+                <hr />
+              </ul>
+            </div>
+            <div class="half-width">
+              <ul>
+                <li>
+                  <strong>Block scope</strong>s are what you get when you use if
+                  statements, for statements, and the like. You can also use
+                  them stand-alone with a simple begin-end curly braces {}, not
+                  to be confused with empty object literals.
+                  <br />
+                  <br />
+                </li>
+                <hr />
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h2>3. Way through the JavaScript Event Loop works:</h2>
+          <div class="full">
+            <ul>
+              <li>
+                The <strong>event loop</strong> is a process that waits for the
+                Call Stack to be clear before pushing callbacks from the Task
+                Queue to the Call Stack. Once the Stack is clear, the event loop
+                triggers and checks the Task Queue for available callbacks. If
+                there are any, it pushes it to the Call Stack, waits for the
+                Call Stack to be clear again, and repeats the same process.
+              </li>
+              <hr />
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h2>4. Ways to get undefined in JavaScript:</h2>
+          <div class="full">
+            <ul>
+              <li>
+                A variable that has not been assigned a value is of type
+                undefined.
+              </li>
+              <li>
+                A method or statement also returns undefined if the variable
+                that is being evaluated does not have an assigned value.
+              </li>
+              <li>A function returns undefined if a value was not returned.</li>
+              <hr />
+            </ul>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
